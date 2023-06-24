@@ -16,10 +16,10 @@ models = [
     ('RN50x16', 'openai'),
     ('RN50x64', 'openai'),
     ('ViT-L-14', 'openai'),
-    ('ViT-B-32-quickgelu', 'datacomp_s_s13m_b4k'),
-    ('ViT-B-32-quickgelu', 'datacomp_m_s128m_b4k'),
-    ('ViT-B-16', 'datacomp_l_s1b_b8k'),
-    ('ViT-L-14', 'datacomp_xl_s13b_b90k'),
+    # ('ViT-B-32-quickgelu', 'datacomp_s_s13m_b4k'),
+    # ('ViT-B-32-quickgelu', 'datacomp_m_s128m_b4k'),
+    # ('ViT-B-16', 'datacomp_l_s1b_b8k'),
+    # ('ViT-L-14', 'datacomp_xl_s13b_b90k'),
     ('ViT-H-14', 'laion2b_s32b_b79k'),
     ('ViT-g-14', 'laion2b_s12b_b42k'),
     ('ViT-bigG-14', 'laion2b_s39b_b160k'),
@@ -64,7 +64,7 @@ def evaluate(image_root, dataset, model, tokenizer, transform, device):
             correct = text_retrieval(data['caption'], data['negative_caption'], image, model, tokenizer, transform, device)
             correct_cnt += correct
         count = len(data_dict)
-        metrics[f'{c}'] = correct_cnt / count
+        metrics[c] = correct_cnt / count
     return metrics
 
 
@@ -84,12 +84,12 @@ if __name__ == '__main__':
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     data_dict = {
-        'add_ent'    : f'{args.data_root}/add_ent.json',
+        'add_obj'    : f'{args.data_root}/add_obj.json',
         'add_att'    : f'{args.data_root}/add_att.json',
-        'replace_ent': f'{args.data_root}/replace_ent.json',
+        'replace_obj': f'{args.data_root}/replace_obj.json',
         'replace_att': f'{args.data_root}/replace_att.json',
         'replace_rel': f'{args.data_root}/replace_rel.json',
-        'swap_ent'   : f'{args.data_root}/swap_ent.json',
+        'swap_obj'   : f'{args.data_root}/swap_obj.json',
         'swap_att'   : f'{args.data_root}/swap_att.json',
     }
     dataset = {}
@@ -103,14 +103,13 @@ if __name__ == '__main__':
         for modelname, pretrained in models:
             print(f"Evaluating {modelname}-{pretrained}")
             args.model = modelname
-            args.pretrained = pretrained
 
             model, tokenizer, transform = load_model(args, pretrained, device)
 
             metrics = evaluate(args.coco_image_root, dataset, model, tokenizer, transform, device)
             print(metrics)
-            print(f"Dump results to: {os.path.join(args.output, f'{args.model}-{args.pretrained}.json')}")
-            json.dump(metrics, open(os.path.join(args.output, f'{args.model}-{args.pretrained}.json'), 'w'), indent=4)
+            print(f"Dump results to: {os.path.join(args.output, f'{args.model}-{pretrained}.json')}")
+            json.dump(metrics, open(os.path.join(args.output, f'{args.model}-{pretrained}.json'), 'w'), indent=4)
 
     else:
         print(f"Evaluating {args.model}-{args.pretrained}")
