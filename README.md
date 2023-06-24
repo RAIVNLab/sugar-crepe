@@ -29,3 +29,10 @@ python main_eval.py --all
     --coco_image_root ./data/coco/images/val2017/ \
     --data_root ./data/ \
 ```
+
+To evaluate the text models included in the paper ([Vera](https://huggingface.co/liujch1998/vera) & Grammar model), run:
+```
+python text_model_eval.py
+    --output ./output \ 
+    --data_root ./data/ \
+```
