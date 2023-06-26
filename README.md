@@ -69,6 +69,7 @@ have overall large rooms for improvements.
 and model size.
 - Existing models are object-centric, struggling to compose attributes and relations.
 - Models’ performance on SugarCrepe correlates with their ImageNet zero-shot accuracy.
+  
 ![](https://github.com/RAIVNLab/sugar-crepe/blob/main/assets/sugarcrepe_eval.png?raw=true)
 
 
