@@ -1,4 +1,4 @@
-# SugarCrepe: A benchmark for faithful vision-language compositionality evaluation
+# <img src="https://github.com/RAIVNLab/sugar-crepe/blob/main/assets/sugar_crepe.png?raw=true" height="50"> SugarCrepe: A benchmark for faithful vision-language compositionality evaluation
 
 
 This is the official repository of SugarCrepe, a benchmark for faithful vision-language compositionality evaluation introduced in our paper [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality]().
