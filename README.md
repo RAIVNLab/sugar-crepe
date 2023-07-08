@@ -61,6 +61,8 @@ We find that NegCLIP's improvements on existing benchmarks, e.g., ARO and CREPE,
 The overestimation is particularly large when the test hard negative type matches the one used in training, which we attribute to models' unintentionally overfitting to the artifacts.
 ![](https://github.com/RAIVNLab/sugar-crepe/blob/main/assets/re_eval.png?raw=true)
 
+The models we trained can be found [here](https://drive.google.com/drive/folders/1n2ZNldxBteltuqx__id43sQCyzq0of09?usp=drive_link).
+
 ### Benchmarking pretrained CLIP models
 On SugarCrepe, we benchmark 17 pretrained CLIP models and present 4 findings:
 - The best pretrained CLIP models demonstrate some compositional understanding but still
