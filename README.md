@@ -78,10 +78,10 @@ and model size.
 ## :paperclip: Cite
 If you find this repository useful, please consider citing:
 ```bibtex
-@article{hsieh2023sugarcrepe,
+@inproceedings{hsieh2023sugarcrepe,
   title={SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality},
   author={Hsieh, Cheng-Yu and Zhang, Jieyu and Ma, Zixian and Kembhavi, Aniruddha and Krishna, Ranjay},
-  journal={arXiv preprint arXiv:2306.14610},
+  booktitle={Thirty-Seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
   year={2023}
 }
 ```
