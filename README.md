@@ -41,7 +41,7 @@ python text_model_eval.py
     --data_root ./data/ \
 ```
 
-**You can also use SugarCrepe in the [clip-benchmark](https://github.com/LAION-AI/CLIP_benchmark#compositionality-evaluation)**
+❗:**You can also use SugarCrepe in the [clip-benchmark](https://github.com/LAION-AI/CLIP_benchmark#compositionality-evaluation)**
 
 ## :open_book: Why SugarCrepe?
 
