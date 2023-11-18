@@ -1,5 +1,16 @@
 # GPT-4V Results
 
+We are evaluating GPT-4V on SugarCrepe, the result is coming soon!
+
+## Prompt we used to evaluate GPT-4V on SugarCrepe
+
+```python
+prompt = f"Which caption best describes the image?\n" \
+                 f"(1) {caption1}\n (2) {caption2}\n" \
+                 f"Output (1) or (2)."
+```
+
+We experiment with two settings: (1) always put positive caption as `caption1` and (2) always put negative caption as `caption1`, which we refer to as `positive-first` and `negative-first` respectively.
 
 
 ## :paperclip: Cite
