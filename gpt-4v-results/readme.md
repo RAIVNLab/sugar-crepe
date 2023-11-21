@@ -12,6 +12,17 @@ prompt = f"Which caption best describes the image?\n" \
 
 We experiment with two settings: (1) always put positive caption as `caption1` and (2) always put negative caption as `caption1`, which we refer to as `positive-first` and `negative-first` respectively.
 
+## Results
+
+| Split     | GPT-4V |
+|---------|----------|
+| swap-att  | 607/666=0.9114 |
+| swap-obj | 211/246=0.8577 |
+| add-att |  |
+| add-obj |  |
+| replace-att |  |
+| replace-obj |  |
+| replace-rel | |
 
 ## :paperclip: Cite
 If you find this repository useful, please consider citing:
