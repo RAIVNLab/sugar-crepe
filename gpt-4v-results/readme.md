@@ -14,7 +14,7 @@ We experiment with two settings: (1) always put positive caption as `caption1` a
 
 ## Results
 
-| Split     | GPT-4V |
+| Split     | GPT-4V (positive-first) |
 |---------|----------|
 | swap-att  | 607/666=0.9114 |
 | swap-obj | 211/246=0.8577 |
