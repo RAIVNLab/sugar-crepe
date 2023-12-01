@@ -18,7 +18,7 @@ We experiment with two settings: (1) always put positive caption as `caption1` a
 |---------|----------|
 | swap-att  | 607/666=0.9114 |
 | swap-obj | 211/246=0.8577 |
-| add-att |  |
+| add-att | 1859/2062=0.9016 |
 | add-obj |  |
 | replace-att |  |
 | replace-obj |  |
