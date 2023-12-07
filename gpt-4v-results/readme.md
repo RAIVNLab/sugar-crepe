@@ -21,7 +21,7 @@ We experiment with two settings: (1) always put positive caption as `caption1` a
 | add-att | 604/692=0.8728 |
 | add-obj | 1859/2062=0.9016 |
 | replace-att |  |
-| replace-obj |  |
+| replace-obj | 1578/1652=0.9552 |
 | replace-rel | |
 
 ## :paperclip: Cite
