@@ -16,12 +16,12 @@ We experiment with two settings: (1) always put positive caption as `caption1` a
 
 | Split     | GPT-4V (positive-first) | GPT-4V (negative-first) |
 |---------|----------|----------|
-| swap-att  | 607/666=0.9114 | |
-| swap-obj | 211/246=0.8577 | |
-| add-att | 604/692=0.8728 | |
-| add-obj | 1859/2062=0.9016 | |
-| replace-att | 734/788=0.9315 | |
-| replace-obj | 1578/1652=0.9552 | |
+| swap-att  | 607/666=0.9114 | 593/666=0.8904 |
+| swap-obj | 211/246=0.8577 | 198/246=0.8049 |
+| add-att | 604/692=0.8728 | 666/692=0.9624 |
+| add-obj | 1859/2062=0.9016 | 1918/2062=0.9302 |
+| replace-att | 734/788=0.9315 | 740/788=0.9391 |
+| replace-obj | 1578/1652=0.9552 | 1604/1652=0.9709 |
 | replace-rel | 1240/1406=0.8819 | |
 
 ## :paperclip: Cite
