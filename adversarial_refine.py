@@ -104,6 +104,6 @@ def adversarial_refine(model1_score_gap, model2_score_gap):
 
 
 N = 1000
-model1_score_gap = np.random.random(N)
-model2_score_gap = np.random.random(N)
+model1_score_gap = 2 * (np.random.random(N) - 0.5)
+model2_score_gap = 2 * (np.random.random(N) - 0.5)
 keep = adversarial_refine(model1_score_gap, model2_score_gap)
