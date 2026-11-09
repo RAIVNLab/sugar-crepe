@@ -109,7 +109,7 @@ if __name__ == '__main__':
             metrics = evaluate(args.coco_image_root, dataset, model, tokenizer, transform, device)
             print(metrics)
             print(f"Dump results to: {os.path.join(args.output, f'{args.model}-{pretrained}.json')}")
-            json.dump(metrics, open(os.path.join(args.output, f'{args.model}-{pretrained}.json'), 'w'), indent=4)
+            json.dump(metrics, open(os.path.join(args.output, f'{args.model}-{pretrained}.json'), 'w', encoding='utf-8'), indent=4)
 
     else:
         print(f"Evaluating {args.model}-{args.pretrained}")
